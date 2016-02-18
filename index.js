@@ -18,9 +18,12 @@ module.exports = function(grunt) {
     var promisedCommand;
 
     if (!command) {
-      promisedCommand = when.promise(function() {
-        throw new Error('Unsupported target: ' + target);
-      });
+      grunt.log.writeln('running unsupported flow command,', target,
+                        '; this may do unexpected things.');
+      promisedCommand = flow(grunt, [target].concat(makeOptions(data)))
+        .then(function(result) {
+          grunt.log.writeln(result.stdout || result.stderr);
+        });
     } else {
       promisedCommand = command(grunt, data, args);
     }
