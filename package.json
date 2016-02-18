@@ -4,12 +4,22 @@
   "description": "Grunt command to work with flow-bin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node -e \"require('grunt').cli()\" null test"
   },
   "author": "kumar.mcmillan@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "flow-bin": "^0.21.0",
-    "when": "^3.7.7"
+    "flow-bin": "0.21.0",
+    "object-assign": "4.0.1",
+    "when": "3.7.7"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "grunt": "0.4.5",
+    "grunt-mocha-test": "0.12.7",
+    "load-grunt-configs": "0.4.3",
+    "load-grunt-tasks": "3.4.0",
+    "mocha": "2.4.5",
+    "sinon": "1.17.3"
   }
 }
