@@ -1,0 +1,15 @@
+{
+  "name": "grunt-flowbin",
+  "version": "0.0.1",
+  "description": "Grunt command to work with flow-bin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kumar.mcmillan@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "flow-bin": "^0.21.0",
+    "when": "^3.7.7"
+  }
+}
