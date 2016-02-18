@@ -94,3 +94,10 @@ that calls `flowbin:start` to start the server then `watch:develop` to
 watch for file changes. When a file changes, this configuration calls
 your custom `test` command and then `flowbin:status` to only check the
 status on newer files.
+
+## Contributing
+
+Grab a clone and get started like this:
+
+    npm install
+    npm test
