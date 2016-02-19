@@ -4,7 +4,7 @@ var when = require('when');
 var assert = require('chai').assert;
 var sinon = require('sinon');
 
-var gruntTask = require('../index');
+var gruntTask = require('../tasks/flowbin');
 var PromiseTester = require('./util').PromiseTester;
 
 

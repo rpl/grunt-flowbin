@@ -1,6 +1,6 @@
 var assert = require('chai').assert;
 
-var makeOptions = require('../index').makeOptions;
+var makeOptions = require('../tasks/flowbin').makeOptions;
 
 
 describe('makeOptions', function() {

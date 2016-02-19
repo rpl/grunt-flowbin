@@ -3,7 +3,7 @@ var assert = require('chai').assert;
 var sinon = require('sinon');
 var grunt = require('grunt');
 
-var flow = require('../index').flow;
+var flow = require('../tasks/flowbin').flow;
 var PromiseTester = require('./util').PromiseTester;
 
 
