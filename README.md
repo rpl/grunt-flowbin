@@ -57,6 +57,25 @@ grunt.initConfig({
 If you want to see the way `flow check` is invoked (the default options, etc),
 run `grunt --verbose ...`.
 
+## Supported flow commands
+
+Here are the Grunt targets you can define for all the `flow` commands currently
+supported. If you define a target that's not supported, the Grunt task will
+attempt to run it just like `flow yourtarget` but that may or may not work.
+
+````javascript
+grunt.initConfig({
+  flowbin: {
+    check: {},
+    start: {},
+    stop: {},
+    status: {},
+  },
+});
+````
+
+Run `flow --help` for info on what these commands do.
+
 ## Continuous flow checks
 
 Since `grunt flowbin:check` checks all files (which can be slow), you
