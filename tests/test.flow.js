@@ -46,6 +46,9 @@ describe('flow', function() {
         spawn.callArgWith(1, '<error>', '<result>', 1);
         return promise;
       })
+      .then(function() {
+        throw new Error('unexpected success');
+      })
       .catch(function(error) {
         assert.match(error.message, /flow exited 1/);
       });

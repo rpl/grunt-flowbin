@@ -68,8 +68,6 @@ PromiseTester.prototype.waitFor = function(makePromise) {
 
 PromiseTester.prototype.tryCallback = function(callback) {
   return this.waitFor(function() {
-    return when.promise(function(resolve) {
-      resolve(callback());
-    });
+    return when.resolve(callback());
   });
 };

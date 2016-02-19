@@ -69,15 +69,18 @@ function flow(grunt, args, opt) {
 }
 
 
-function checkForFlowErrors(grunt, cmd, options) {
+function checkForFlowErrors(grunt, cmd, options, config) {
   var magicStatuses = {
     flowError: 2,  // a Flow error in some files
-  }
+  };
   var cmdOpts = makeOptions(options, {
     color: 'always',
-  })
+  });
+  var conf = assign({
+    flow: flow,
+  }, config);
 
-  return flow(grunt, [cmd].concat(cmdOpts), {
+  return conf.flow(grunt, [cmd].concat(cmdOpts), {
       validStatuses: [
         0,
         magicStatuses.flowError,
@@ -85,6 +88,9 @@ function checkForFlowErrors(grunt, cmd, options) {
     })
     .then(function(result) {
       grunt.log.writeln(result.stdout || result.stderr);
+      if (result.code !== 0) {
+        throw new Error('flow ' + cmd + ' exited ' + result.code);
+      }
     });
 }
 
@@ -153,3 +159,4 @@ module.exports = function(grunt, opt) {
 
 module.exports.flow = flow;
 module.exports.makeOptions = makeOptions;
+module.exports.checkForFlowErrors = checkForFlowErrors;
