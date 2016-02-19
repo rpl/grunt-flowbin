@@ -41,6 +41,19 @@ grunt.initConfig({
 });
 ````
 
+If you want to pass a flag (an option without a value) like `flow check --quiet`,
+give the option a value of `null`:
+
+````javascript
+grunt.initConfig({
+  flowbin: {
+    check: {
+      quiet: null,
+    },
+  },
+});
+````
+
 If you want to see the way `flow check` is invoked (the default options, etc),
 run `grunt --verbose ...`.
 
