@@ -1,6 +1,6 @@
 {
   "name": "grunt-flowbin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Grunt command to work with flow-bin",
   "main": "tasks/flowbin.js",
   "scripts": {
