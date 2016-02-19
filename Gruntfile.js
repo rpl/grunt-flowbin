@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
   var configs = require('load-grunt-configs')(grunt, {
     config: {
-      src: 'tasks/*.js',
+      src: 'project-tasks/*.js',
     },
   });
   grunt.initConfig(configs);
