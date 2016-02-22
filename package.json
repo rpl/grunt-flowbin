@@ -14,7 +14,7 @@
   "author": "kumar.mcmillan@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "flow-bin": "0.21.0",
+    "flow-bin": "^0.21.0",
     "object-assign": "4.0.1",
     "when": "3.7.7"
   },
