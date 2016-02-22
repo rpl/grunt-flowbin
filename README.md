@@ -3,6 +3,8 @@
 This is a thin [grunt](http://gruntjs.com/) wrapper around the
 [flow-bin](https://github.com/flowtype/flow-bin/) command line tool.
 
+[![Build Status](https://travis-ci.org/kumar303/grunt-flowbin.svg?branch=master)](https://travis-ci.org/kumar303/grunt-flowbin)
+
 It allows you to integrate [Flow](http://flowtype.org/)'s
 static JavaScript analysis into your Grunt toolchain.
 Unlike other solutions, this one attempts to pass off as much work
