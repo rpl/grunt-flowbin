@@ -29,7 +29,7 @@
   "devDependencies": {
     "chai": "3.5.0",
     "grunt": "1.0.1",
-    "grunt-mocha-test": "0.13.0",
+    "grunt-mocha-test": "0.13.1",
     "load-grunt-configs": "1.0.0",
     "load-grunt-tasks": "3.5.2",
     "mocha": "3.0.2",
