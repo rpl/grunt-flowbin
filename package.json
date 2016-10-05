@@ -14,7 +14,6 @@
   "author": "kumar.mcmillan@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "flow-bin": "^0.33.0",
     "object-assign": "4.1.0",
     "when": "3.7.7"
   },
@@ -28,6 +27,7 @@
   ],
   "devDependencies": {
     "chai": "3.5.0",
+    "flow-bin": "0.33.0",
     "grunt": "1.0.1",
     "grunt-mocha-test": "0.13.2",
     "load-grunt-configs": "1.0.0",
@@ -36,6 +36,7 @@
     "sinon": "1.17.6"
   },
   "peerDependencies": {
+    "flow-bin": ">= 0.30.0 < 0.40.0",
     "grunt": "~1.0.0"
   }
 }
